@@ -1,3 +1,4 @@
+#!/bin/bash
 ##################################################################
 # Prompt Rename Computer
 #
@@ -6,8 +7,6 @@
 # Ralph Casafrancisco
 # casafrancisco@chapman.edu
 # 2019-05-April
-
-#!/bin/bash
 
 # Get User to input name
 while true
