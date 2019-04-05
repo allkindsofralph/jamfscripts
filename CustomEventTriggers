@@ -8,6 +8,9 @@
 # The script checks each parameter to see if it is not blank, if
 # the parameter has a value it will trigger the policy.
 #
+# Ralph Casafrancisco
+# casafrancisco@chapman.edu
+# 2019-14-March
 
 if [ "$4" != "" ];then
 	sudo jamf policy -trigger $4
