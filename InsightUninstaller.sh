@@ -9,8 +9,13 @@
 # casafrancisco@chapman.edu
 # 2019-05-April
 
-#Opens the Uninstaller as the current user
-sudo -u $3 open /var/etc/InsightUninstall/Student\ Uninstall.app
+#Check to see if Insight is Installed
+if [ -d "/Library/Application Support/Faronics/Insight" ]; then
+
+  #Opens the Uninstaller as the current user
+  sudo -u $3 open /var/etc/InsightUninstall/Student\ Uninstall.app
+  
+fi
 
 #Wait for 120 seconds
 sleep 120
