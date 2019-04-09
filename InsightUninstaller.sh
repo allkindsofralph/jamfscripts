@@ -1,8 +1,10 @@
+#!/bin/bash
+
 ##################################################################
 # Faronics Insight Uninstaller
 #
-# Script to pair with "Insight Uninstaller.pkg" which copies the Uninstaller App
-# to a hidden folder to users. Script then opens the app (which prompts for uninstall)
+# Script to pair with "UninstallInsight.pkg" which contains the Uninstaller App
+# in a hidden folder to users. Script then opens the app (which prompts for uninstall)
 # then waits 2 minutes to allow the process to finish. Then deletes the Uninstaller App.
 #
 # Ralph Casafrancisco
@@ -13,13 +15,18 @@
 if [ -d "/Library/Application Support/Faronics/Insight" ]; then
 
   #Opens the Uninstaller as the current user
-  sudo -u $3 open /var/etc/InsightUninstall/Student\ Uninstall.app
+  sudo open /var/etc/InsightUninstall/Student\ Uninstall.app
+    
+  #Wait for 30 seconds
+  sleep 30
   
+else
+  
+  echo "Insight was not detected"
+
 fi
 
-#Wait for 120 seconds
-sleep 120
 
 #Remove the Uninstaller
-cd /var/etc/
-rm -rf InsightUninstall
+rm -rf /var/etc/InsightUninstall
+rm -rf /Library/Application\ Support/Faronics/Insight
