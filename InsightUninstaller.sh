@@ -15,7 +15,7 @@
 if [ -d "/Library/Application Support/Faronics/Insight" ]; then
 
   #Opens the Uninstaller as the current user
-  sudo open /var/etc/InsightUninstall/Student\ Uninstall.app
+  sudo -u $3 open /var/etc/InsightUninstall/Student\ Uninstall.app
     
   #Wait for 120 seconds
   sleep 120
