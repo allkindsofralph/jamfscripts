@@ -15,8 +15,8 @@
 serial=$(system_profiler SPHardwareDataType | grep 'Serial Number (system)' | awk '{print $NF}')
 
 # Account properties
-accountName="jssapi"
-accountPassword="RESTEasy!"
+accountName="username"
+accountPassword="password"
 jssServerURL="https://jss.chapman.edu:8443"
 
 # The XML for setting the value of the Extension Attribute
