@@ -14,9 +14,6 @@
 # Serial number of the device is passed to script in environment variable
 serial=$(system_profiler SPHardwareDataType | grep 'Serial Number (system)' | awk '{print $NF}')
 
-echo 'hello ${serial}'
-
-
 # Account properties
 accountName="jssapi"
 accountPassword="RESTEasy!"
