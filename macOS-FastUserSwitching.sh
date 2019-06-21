@@ -2,7 +2,9 @@
 ##################################################################
 # Enable Fast User Switching
 #
-# Enables multi user logins by turning on Fast User Switching
+# Script to enable Fast User Switching so that an admin is able to
+# sign in to a computer if a user is not present but still logged in
+# to the computer.
 #
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
