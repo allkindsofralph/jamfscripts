@@ -5,7 +5,7 @@
 # Script to make a Finder Prompt to rename the computer.
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
+# http://github.com/allkindsofralph
 # 2019-05-April
 
 # Get User to input name
