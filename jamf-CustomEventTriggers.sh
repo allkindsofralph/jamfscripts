@@ -9,7 +9,7 @@
 # the parameter has a value it will trigger the policy.
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
+# http://github.com/allkindsofralph
 # 2019-14-March
 
 if [ "$4" != "" ];then
