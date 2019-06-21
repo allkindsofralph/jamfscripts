@@ -5,7 +5,7 @@
 # Enables multi user logins by turning on Fast User Switching
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
+# http://github.com/allkindsofralph
 # 2019-10-April
 
 defaults write /Library/Preferences/.GlobalPreferences.plist MultipleSessionEnabled -bool true
