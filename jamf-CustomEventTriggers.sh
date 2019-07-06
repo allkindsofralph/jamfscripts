@@ -1,3 +1,4 @@
+#!/bin/bash
 ##################################################################
 # Custom Event Triggers
 #
@@ -13,33 +14,33 @@
 # 2019-March-14
 
 if [ "$4" != "" ];then
-	sudo jamf policy -trigger $4
+	sudo jamf policy -trigger "$4"
 fi
 
 if [ "$5" != "" ];then
-	sudo jamf policy -trigger $5
+	sudo jamf policy -trigger "$5"
 fi
 
 if [ "$6" != "" ];then
-	sudo jamf policy -trigger $6
+	sudo jamf policy -trigger "$6"
 fi
 
 if [ "$7" != "" ];then
-	sudo jamf policy -trigger $7
+	sudo jamf policy -trigger "$7"
 fi
 
 if [ "$8" != "" ];then
-	sudo jamf policy -trigger $8
+	sudo jamf policy -trigger "$8"
 fi
 
 if [ "$9" != "" ];then
-	sudo jamf policy -trigger $9
+	sudo jamf policy -trigger "$9"
 fi
 
 if [ "${10}" != "" ];then
-	sudo jamf policy -trigger ${10}
+	sudo jamf policy -trigger "${10}"
 fi
 
 if [ "${11}" != "" ];then
-	sudo jamf policy -trigger ${11}
+	sudo jamf policy -trigger "${11}"
 fi
