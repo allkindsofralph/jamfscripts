@@ -7,8 +7,8 @@
 # been fixed in an update.
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-08-April
+# http://github.com/allkindsofralph
+# 2019-April-08
 
 # Removes the problem file
 sudo rm -r /Library/Application\ Support/Microsoft/Office365/User\ Content.localized/Startup.localized/Word/EndNote\ CWYW\ Word\ 2016.bundle

@@ -7,8 +7,8 @@
 # been fixed in an update.
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-08-April
+# http://github.com/allkindsofralph
+# 2019-April-08
 
 # Removes the problem file
 rm ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm

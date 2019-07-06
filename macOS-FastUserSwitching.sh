@@ -8,9 +8,11 @@
 #
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
-# 2019-10-April
+# 2019-April-10
 
 defaults write /Library/Preferences/.GlobalPreferences.plist MultipleSessionEnabled -bool true
 defaults write /Library/Preferences/com.apple.loginwindow.plist SHOWFULLNAME -bool true
 
+echo 
 echo "Fast User Switching is now enabled."
+echo

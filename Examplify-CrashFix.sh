@@ -5,11 +5,11 @@
 # Fixes issues after a Examplify crash or incorrect shut down
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-08-April
+# http://github.com/allkindsofralph
+# 2019-April-08
 
 # Deletes Plist that prevents Desktop items to be seen
-sudo -u $3 rm ~/Library/Preferences/com.apple.finder.plist 
+sudo -u $3 rm ~/Library/Preferences/com.apple.finder.plist
 
 # Deletes Plist that prevents Screen Shots
 sudo -u $3 rm ~/Library/Preferences/com.apple.screencapture.plist

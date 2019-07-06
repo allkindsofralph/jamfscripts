@@ -5,11 +5,11 @@
 # Checks if a file exists and assigns a String to an EA
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-22-April
+# http://github.com/allkindsofralph
+# 2019-April-22
 
 # Place file name here
-FILE=/tmp/unenroll/ready.txt    
+FILE=/tmp/unenroll/ready.txt
 
 # Check if file Exists
 if [ -f $FILE ]; then

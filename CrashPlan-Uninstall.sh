@@ -5,8 +5,8 @@
 # Launches the CrashPlan Uninstaller
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-05-April
+# http://github.com/allkindsofralph
+# 2019-April-05
 
 #Check to see if CrashPlan Uninstaller is present
 if [ -f "/Library/Application Support/CrashPlan.app" ]; then

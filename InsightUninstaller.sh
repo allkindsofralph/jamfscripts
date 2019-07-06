@@ -8,20 +8,20 @@
 # then waits 2 minutes to allow the process to finish. Then deletes the Uninstaller App.
 #
 # Ralph Casafrancisco
-# casafrancisco@chapman.edu
-# 2019-05-April
+# http://github.com/allkindsofralph
+# 2019-April-05
 
 #Check to see if Insight is Installed
 if [ -d "/Library/Application Support/Faronics/Insight" ]; then
 
   #Opens the Uninstaller as the current user
   sudo -u $3 open /var/etc/InsightUninstall/Student\ Uninstall.app
-    
+
   #Wait for 120 seconds
   sleep 120
-  
+
 else
-  
+
   echo "Insight was not detected"
 
 fi
