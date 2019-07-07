@@ -19,9 +19,9 @@ if [[ $assetTag != "" ]]; then
   echo "Asset Tag has been submitted as $assetTag to jamf"
   echo
   exit 0
+else
+  echo
+  echo "No Asset Tag was entered"
+  echo
+  exit 0
 fi
-
-echo
-echo "No Asset Tag was entered"
-echo
-exit 0
