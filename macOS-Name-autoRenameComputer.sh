@@ -1,0 +1,42 @@
+#!/bin/bash
+##################################################################
+# Automatic Rename Computer
+#
+# Script will automatically rename the computer based on model and
+# serial number. Customize to your liking as needed.
+#
+# Ralph Casafrancisco
+# http://github.com/allkindsofralph
+# 2019-26-June
+
+# Get Serial Number
+serial=$(system_profiler SPHardwareDataType | grep 'Serial Number (system)' | awk '{print $NF}')
+
+# Get Model Type
+model=$(system_profiler SPHardwareDataType | grep 'Model Name' | sed 's/      Model Name: //')
+
+# Shorten the computer model names here
+case $model in
+	"MacBook Pro") model="mbp";;
+	"MacBook Air") model="mba";;
+	"Mac mini") model="macmini";;
+	"MacBook") model="mb";;
+	"iMac") model="imac";;
+	"iMac Pro") model="imacpro";;
+	"Mac Pro") model="macpro";;
+	*) model="unknown"
+esac
+
+# Build Computer Name string (Here is were you may want to alter your naming scheme)
+computerName="${model} ${serial}"
+
+# Set Computer Name
+sudo scutil --set ComputerName "$computerName"
+sudo scutil --set LocalHostName "$computerName"
+sudo scutil --set HostName "$computerName"
+sudo /usr/local/bin/jamf recon
+
+echo
+echo "Computer name has been set to: $computerName"
+echo
+exit 0
