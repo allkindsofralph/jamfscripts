@@ -8,6 +8,10 @@
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
 # 2019-26-June
+#
+### jamf Parameter Labels ###
+# Parameter 4
+# Computer Naming Scheme string (variables: $model and $serial are available)
 
 # Get Serial Number
 serial=$(system_profiler SPHardwareDataType | grep 'Serial Number (system)' | awk '{print $NF}')
@@ -27,8 +31,12 @@ case $model in
 	*) model="unknown"
 esac
 
-# Build Computer Name string (Here is were you may want to alter your naming scheme)
-computerName="${model} ${serial}"
+# Setup default naming scheme here. Optionally you can use Parameter 4 to set it there.
+computerName="$3-${model}"
+
+if [[ $4 != "" ]]; then
+	computerName="$4"
+fi
 
 # Set Computer Name
 sudo scutil --set ComputerName "$computerName"
