@@ -9,7 +9,7 @@
 # 2019-April-22
 
 # Place file name here
-FILE="/tmp/unenroll/ready.txt"
+FILE="/etc/watermarks/ready.txt"
 
 # Check if file Exists
 if [ -f $FILE ]; then
