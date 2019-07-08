@@ -9,8 +9,17 @@
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
 # 2019-24-June
+#
+### jamf Parameter Labels ###
+# Parameter 4
+# Password for main user
+#
+# Parameter 5
+# Name of user to Add to FileVault
+#
+# Parameter 6
+# Password of user to Add to FileVault
 
-# You can set variables here or use Parameters 4-6
 defaultPW="password_is_weak"
 adminUser="jamf"
 adminPW="i_feel_the_Power"
