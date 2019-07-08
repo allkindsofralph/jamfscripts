@@ -9,6 +9,16 @@
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
 # 2019-26-June
+#
+### jamf Parameter Labels ###
+# Parameter 4
+# Room to set in Inventory
+#
+# Parameter 5
+# Department to set in Inventory
+#
+# Parameter 6
+# String to build out computer name ($serial and $model are available to use)
 
 # Set room and department you want the inventory to be listed under
 room=""
@@ -44,6 +54,10 @@ esac
 
 # Build Computer Name string
 computerName="${model} ${serial}"
+
+if [[ $6 != "" ]]; then
+	computerName="$6"
+fi
 
 # Set Computer Name
 sudo scutil --set ComputerName "$computerName"
