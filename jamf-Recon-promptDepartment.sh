@@ -8,6 +8,10 @@
 # Ralph Casafrancisco
 # http://github.com/allkindsofralph
 # 2019-July-07
+#
+### jamf Parameter Labels ###
+# Parameter 4
+# String for array of Departments (format: Each item Double Quoted, and comma spaced between each.)
 
 # Set Departments here as strings separated by comma
 # ie. ("Department 1", "Department 2", "etc")
