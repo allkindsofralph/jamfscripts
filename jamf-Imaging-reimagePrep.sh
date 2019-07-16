@@ -33,7 +33,7 @@ if [[ $5 != "" ]]; then
 fi
 
 jamf flushPolicyHistory
-sudo jamf recon -endUsername "" -realname "" -email "" -position "" -room \""$room"\" -department \""$department"\"
+sudo jamf recon -endUsername " " -realname " " -email " " -position " " -room \""$room"\" -department \""$department"\"
 
 # Get Serial Number
 serial=$(system_profiler SPHardwareDataType | grep 'Serial Number (system)' | awk '{print $NF}')
